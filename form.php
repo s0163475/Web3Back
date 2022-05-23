@@ -6,7 +6,7 @@
 
             $user='u47538';
             $pass='7904823';
-            $conn= new PDO('mysql:host=localhost;dbname=u47542', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+            $conn= new PDO('mysql:host=localhost;dbname=u47538', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
             try {
                 $Insert_form=$conn->prepare("INSERT INTO Ex3 (Fio, Email, Date_birth, Sex, Count_limbs, Abilitys, Biography) 
                 VALUES (:Fio, :Email, :Date_birth, :Sex, :Count_limbs, :Abilitys, :Biography)");
